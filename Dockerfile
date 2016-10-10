@@ -2,7 +2,7 @@
 FROM debian:jessie
 
 # Getting the prerequisite packages.
-RUN apt-get -y update && apt-get -y install ruby-dev gem-dev gem ruby xvfb firefox-esr git bundler libgl1-mesa-dri build-essential --no-install-recommends
+RUN apt-get -y update && apt-get -y install ruby-dev gem-dev gem ruby xvfb firefox-esr git bundler libgl1-mesa-dri build-essential xclip --no-install-recommends
 
 # Update gem base and install prerequisite gems.
 RUN gem update --system
