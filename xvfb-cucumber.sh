@@ -1,5 +1,5 @@
 #!/bin/bash
 DISPLAY=:99.0
-export DISPLAY 
+export DISPLAY
 /etc/init.d/xvfb start
-cucumber
+cucumber -f pretty -f html -o reports/index.html
