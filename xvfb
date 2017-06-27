@@ -1,4 +1,7 @@
 #!/bin/sh
+set -e
+. /lib/lsb/init-functions
+
 XVFB=/usr/bin/Xvfb
 XVFBARGS=":99 -ac -screen 0 1920x1080x16 +extension GLX +render -noreset"
 PIDFILE=/var/run/xvfb.pid
