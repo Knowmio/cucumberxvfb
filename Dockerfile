@@ -7,8 +7,8 @@ RUN apt-get -y update && apt-get -y install ruby-dev gem-dev gem ruby xvfb firef
 # Update gem base and install prerequisite gems.
 RUN echo "gem: --no-document" >> /etc/gemrc
 RUN gem update --system
-RUN gem install selenium-webdriver -v 3.6.0
-RUN gem install appium_lib ci_reporter cucumber selenium rspec addressable win32-service selenium-cucumber clipboard syntax google-api-client mechanize
+#RUN gem install selenium-webdriver -v 3.6.0
+RUN gem install appium_lib ci_reporter cucumber selenium selenium-webdriver rspec addressable win32-service selenium-cucumber clipboard syntax google-api-client mechanize
 
 # Setting up xvfb as a daemon.
 COPY xvfb /etc/init.d/
