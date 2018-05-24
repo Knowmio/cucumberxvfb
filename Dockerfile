@@ -1,4 +1,4 @@
-# Base the image off of Debian jessie.
+# Base the image off of Debian buster.
 FROM debian:buster
 
 # Getting the prerequisite packages.
